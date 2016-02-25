@@ -120,7 +120,8 @@ public class SinglyLinkedListInt {
 	}
 
 	public void insertBetween(int data, Node prevNode, Node nextNode){
-		
+		Node nn = new Node(data, nextNode);
+		prevNode.next = nn;
 	}
 	
 	public void insertionSort(){
